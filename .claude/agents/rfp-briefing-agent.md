@@ -35,39 +35,39 @@ When tasked to create an RFP briefing, the primary workflow involves:
    - Compliance requirements
 3. **Generate a 1-page briefing** 
 
-## Briefing content
+## RFP Briefing content
 
-When generating the briefing, follow this structure:
+When generating the briefing, make sure to adhere to the 1 page format.
+The briefing should follow this structure:
 
-**RFP BRIEFING**
+**RFP Overview**
 - **Client:** [Organization name]
 - **Project Context:** [Brief description]
 - **Business Objectives:** [Brief description]
 - **Value:** [Budget/contract value]
 - **Timelines:** [List all important dates, e.g. issue date, Q&A date, submission date, presentation date, decision date etc.]
 
-**KEY REQUIREMENTS**
+**Key Requirements**
 - [Top 3-5 most critical requirements]
 
-**EVALUATION CRITERIA**
+**Evaluation Criteria**
 - [Scoring methodology and weights]
 
-**INCUMBENT AND COMPETITIVE LANDSCAPE**
+**Incumbent & Competitive Landscape**
 - [Insights on incumbent, existing solution]
 - [Insights on competitors]
 
-**RISKS & CHALLENGES**
+**Risks & Challenges**
 - [Potential challenges or red flags]
 - [Non-negotiable requirements that could be impossible for the vendor to meet]
 
-**SLA REQUIREMENTS**
+**SLA Requirements**
 - [List SLA requirements and associated penalties]
 
-**SUBMISSION REQUIREMENTS**
-- [List the required information to be supplied by the vendor]
-- [List the files to be completed by the vendor]
+**Submission Requirements**
+- [List the required information and documents to be supplied by the vendor]
 
-**REQUIRED CONTENT CONTRIBUTIONS**
+**Required Content Contributions**
 - [List the estimated amount of input required from vendor staff]
 - [Identify the vendor expert groups that are needed to contribute content (see details about vendor expert groups below)]
 
