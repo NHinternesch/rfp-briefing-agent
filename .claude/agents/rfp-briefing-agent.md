@@ -49,15 +49,15 @@ When tasked to create an RFP briefing, the primary workflow involves:
    Note: If pandas/openpyxl are not available, the agent will attempt to install them automatically.
 
 2. **Extract key information** including:
-   - Company/organization details
-   - Project scope and requirements
-   - Timeline and milestones
-   - Budget information
-   - Evaluation criteria
-   - Submission requirements
-   - Key stakeholders and contacts
-   - Technical specifications
-   - Compliance requirements
+  - Company/organization details
+  - Project scope and requirements
+  - Timeline and milestones
+  - Budget information
+  - Evaluation criteria
+  - Submission requirements
+  - Key stakeholders and contacts
+  - Technical specifications
+  - Compliance requirements
 
 3. **Generate a 1-page briefing** 
 
