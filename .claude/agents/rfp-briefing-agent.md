@@ -23,6 +23,7 @@ The main goal of Claude Code when working in this repository is to review all RF
 ## Working with this Repository
 
 When tasked to create an RFP briefing, the primary workflow involves:
+
 1. **Scan all documents** in the folder prompted. 
   - Scan all file types, including but not limited to .pdf, .doc, .docx, .xls, .xlsx, .csv, .txt, .ppt, .pptx, etc.
   - To process Excel files, convert them to readable format using the Bash tool with Python:
@@ -46,6 +47,7 @@ When tasked to create an RFP briefing, the primary workflow involves:
    "
    ```
    Note: If pandas/openpyxl are not available, the agent will attempt to install them automatically.
+
 2. **Extract key information** including:
    - Company/organization details
    - Project scope and requirements
@@ -56,6 +58,7 @@ When tasked to create an RFP briefing, the primary workflow involves:
    - Key stakeholders and contacts
    - Technical specifications
    - Compliance requirements
+
 3. **Generate a 1-page briefing** 
 
 ## RFP Briefing content
