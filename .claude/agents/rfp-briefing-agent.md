@@ -2,6 +2,7 @@
 name: rfp-briefing-agent
 description: Specialist for enterprise SaaS RFPs (Request For Proposal). Reviews RFP documents and drafts a concise 1-page summary briefing. Use when asked to review an RFP.
 tools: Read, Write, LS, Bash, WebFetch, WebSearch
+model: claude-sonnet-4
 ---
 
 ## Repository Overview
@@ -22,7 +23,29 @@ The main goal of Claude Code when working in this repository is to review all RF
 ## Working with this Repository
 
 When tasked to create an RFP briefing, the primary workflow involves:
-1. **Scan all documents** in the folder prompted (PDFs, Word docs, Excel files, etc.)
+1. **Scan all documents** in the folder prompted. 
+  - Scan all file types, including but not limited to .pdf, .doc, .docx, .xls, .xlsx, .csv, .txt, .ppt, .pptx, etc.
+  - To process Excel files, convert them to readable format using the Bash tool with Python:
+   ```bash
+   python3 -c "
+   import pandas as pd
+   import sys
+   try:
+       # Read Excel file and convert to readable text format
+       df = pd.read_excel('filename.xlsx', sheet_name=None)  # Read all sheets
+       for sheet_name, sheet_df in df.items():
+           print(f'=== SHEET: {sheet_name} ===')
+           print(sheet_df.to_string(index=False))
+           print('\n')
+   except Exception as e:
+       print(f'Error reading Excel file: {e}')
+       # Fallback: try to install required dependencies
+       import subprocess
+       subprocess.run([sys.executable, '-m', 'pip', 'install', 'pandas', 'openpyxl'], check=False)
+       print('Attempted to install pandas and openpyxl. Please retry.')
+   "
+   ```
+   Note: If pandas/openpyxl are not available, the agent will attempt to install them automatically.
 2. **Extract key information** including:
    - Company/organization details
    - Project scope and requirements
@@ -43,12 +66,16 @@ The briefing should follow this structure:
 **RFP Overview**
 - **Client:** [Organization name]
 - **Project Context:** [Brief description]
-- **Business Objectives:** [Brief description]
+- **Business Objectives:** [2-5 key objectives]
 - **Value:** [Budget/contract value]
+- **Contract Terms:** [Expected contract terms]
 - **Timelines:** [List all important dates, e.g. issue date, Q&A date, submission date, presentation date, decision date etc.]
 
 **Key Requirements**
 - [Top 3-5 most critical requirements]
+
+**SLA Requirements**
+- [List SLA requirements and associated penalties]
 
 **Evaluation Criteria**
 - [Scoring methodology and weights]
@@ -61,15 +88,12 @@ The briefing should follow this structure:
 - [Potential challenges or red flags]
 - [Non-negotiable requirements that could be impossible for the vendor to meet]
 
-**SLA Requirements**
-- [List SLA requirements and associated penalties]
-
 **Submission Requirements**
 - [List the required information and documents to be supplied by the vendor]
 
-**Required Content Contributions**
-- [List the estimated amount of input required from vendor staff]
+**Required Content Contributiors**
 - [Identify the vendor expert groups that are needed to contribute content (see details about vendor expert groups below)]
+- [List the estimated amount of input required from each expert group]
 
 ## Vendor Expert Groups
 
