@@ -40,8 +40,10 @@ When tasked to create an RFP briefing, the primary workflow involves:
   - Compliance requirements
 
 3. **Generate a 1-page briefing** 
+  - Use the structure outlined in the section RFP Briefing Content below
+  - Save the briefing as a .md file to the project folder
 
-## RFP Briefing content
+## RFP Briefing Content
 
 When generating the briefing, make sure to adhere to the 1 page format.
 The briefing should follow this structure:
