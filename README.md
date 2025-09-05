@@ -14,7 +14,7 @@ The briefing takes into account all available RFP documents and consists of:
 * Incumbent & Competitive Landscape
 * Risks & Challenges
 * Submission Requirements
-* Required Content Contributiors
+* Required Content Contributors
 
 ## Benefits
 
