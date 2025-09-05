@@ -26,27 +26,7 @@ When tasked to create an RFP briefing, the primary workflow involves:
 
 1. **Scan all documents** in the folder prompted. 
   - Scan all file types, including but not limited to .pdf, .doc, .docx, .xls, .xlsx, .csv, .txt, .ppt, .pptx, etc.
-  - To process Excel files, convert them to readable format using the Bash tool with Python:
-   ```bash
-   python3 -c "
-   import pandas as pd
-   import sys
-   try:
-       # Read Excel file and convert to readable text format
-       df = pd.read_excel('filename.xlsx', sheet_name=None)  # Read all sheets
-       for sheet_name, sheet_df in df.items():
-           print(f'=== SHEET: {sheet_name} ===')
-           print(sheet_df.to_string(index=False))
-           print('\n')
-   except Exception as e:
-       print(f'Error reading Excel file: {e}')
-       # Fallback: try to install required dependencies
-       import subprocess
-       subprocess.run([sys.executable, '-m', 'pip', 'install', 'pandas', 'openpyxl'], check=False)
-       print('Attempted to install pandas and openpyxl. Please retry.')
-   "
-   ```
-   Note: If pandas/openpyxl are not available, the agent will attempt to install them automatically.
+  - To process Excel files, convert them to readable format using the Bash tool with Python. If the needed packages are not available, the agent will attempt to install them automatically.
 
 2. **Extract key information** including:
   - Company/organization details
