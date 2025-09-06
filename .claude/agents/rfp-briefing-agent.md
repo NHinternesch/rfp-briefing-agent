@@ -51,7 +51,7 @@ The briefing should follow this structure:
 **RFP Overview**
 - **Client:** [Organization name]
 - **Project Context:** [Brief description]
-- **Business Objectives:** [2-5 key objectives]
+- **High-Level Business Objectives:** [2-3 key objectives]
 - **Value:** [Budget/contract value]
 - **Contract Terms:** [Expected contract terms]
 - **Timelines:** [List all important dates, e.g. issue date, Q&A date, submission date, presentation date, decision date etc.]
@@ -66,7 +66,7 @@ The briefing should follow this structure:
 - [Scoring methodology and weights]
 
 **Incumbent & Competitive Landscape**
-- [Insights on incumbent, existing solution]
+- [Insights on incumbent, currently used solution to be replaced]
 - [Insights on competitors]
 
 **Risks & Challenges**
