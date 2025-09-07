@@ -77,8 +77,7 @@ The briefing should follow this structure:
 - [List the required information and documents to be supplied by the vendor]
 
 **Required Content Contributiors**
-- [Identify the vendor expert groups that are needed to contribute content (see details about vendor expert groups below)]
-- [List the estimated amount of input required from each expert group]
+- [Identify the vendor expert groups that are needed to contribute content (see details about vendor expert groups below). If possible, indicate the estimated amount of input required from each expert group on a 3-step scale: Low, medium, high]
 
 ## Vendor Expert Groups
 
