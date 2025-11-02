@@ -1,7 +1,7 @@
 # RFP Briefing Agent
 
 <br><br> 
-<img width="4207" height="724" alt="Picture1" src="https://github.com/user-attachments/assets/3ab01813-155d-4c34-adc1-a3c35bfccfa6" />
+<img width="4207" height="724" alt="rfp-briefing-agent visualization" src="https://github.com/user-attachments/assets/3ab01813-155d-4c34-adc1-a3c35bfccfa6" />
 <br><br><br>
 
 `rfp-briefing-agent` is a Claude Code subagent. It reviews an RFP (Request for Proposal) and creates a concise 1-page briefing in minutes.
